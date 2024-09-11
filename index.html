@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>IRON BYCICLE</title>
+    <title>IRON BICYCLE</title>
 </head>
 
 <script>
     function myFunction() {
       alert("Message sended, our employees will contact to you on few moments.");
+    }
+    function myFunction2(target) {
+      alert("Your email was sended.");
+      target.value="";
+    }
+    function goToPartner() {
+        window.location.href = "http://www.w3schools.com";
+    }
+    function goToCertificates() {
+        window.location.href = "https://www.ternbicycles.com/en/explore/product-safety/e-bike-certifications-ones-really-matter-your-safety";
     }
 </script>
 
@@ -28,7 +38,7 @@
                 <a href="#Con">Contact Us</a>
                 <div class="buscador">
                     <input type="text" placeholder="Type your email" id="user" name="user">
-                    <input style="background-color: rgb(2, 155, 198); color: white; border-color: white; font-weight: bold;" type="submit" value="Enviar">
+                    <input style="background-color: rgb(2, 155, 198); color: white; border-color: white; font-weight: bold;" type="submit" value="Enviar" onclick="myFunction2(user)">
                 </div>
                 <a href="#" style="float:right">Sign In</a>
         </div>
@@ -87,20 +97,20 @@
 
             <div class="endcolumn" style="width: 10%; margin-left: 10%;">
                 <h3>BICYCLES</h3>
-                <button type="button" class="one" href="#Cat">Catalog</button>
+                <a class="one" href="#Cat" >Catalog</a>
             </div>
 
             <div class="endcolumn" style="width: 10%; margin-left: 10%;">
                 <h3>SUPPORT</h3>
-                <button type="button" class="one" href="#cotizaciones" target="_blank" style="margin-bottom: 5%;">Quotes</button>
-                <button type="button" class="one" href="#certificaciones" target="_blank" style="margin-top: 5%;">Certifications</button>
-                <button type="button" class="one" href="#ayuda" style="margin-top: 10%;">Technical support</button>
+                <button type="button" class="one" onclick="myFunction()">Quotes</button>
+                <button type="button" class="one" style="margin-top: 10%;" onclick="goToCertificates()">Certifications</button>
+                <a class="one" href="#ayuda" style="margin-top: 10%;">Technical support</a>
             </div>
 
             <div class="endcolumn" style="width: 10%; margin-left: 10%;">
                 <h3>ABOUT US</h3>
-                <button type="button" class="one" href="#blog" target="_blank" style="margin-bottom: 5%;">Blog</button>
-                <button type="button" class="one" href="myFunction()" style="margin-top: 5%;">Partners</button>
+                <a class="one" href="#blog" target="_blank" style="margin-bottom: 5%;">Blog</a>
+                <button type="button" class="one" style="margin-top: 10%;" onclick="goToPartner()">Partners</button>
                 <button type="button" class="one" style="margin-top: 10%;" onclick="myFunction()">Help</button>
             </div>
         </div>
