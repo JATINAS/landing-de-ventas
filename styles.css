@@ -27,6 +27,7 @@
     padding: 2% 1%;
     text-decoration: none;
     font-size: 120%;
+    transition-duration: 0.4s;
 }
 
 .barranav a:hover {
@@ -96,7 +97,7 @@
     float: left;
 }
 
-a.one:link, a.one:visited {
+a.one:link, a.one:visited, button.one {
     background-color: white;
     color: black;
     border: 2px solid rgb(2, 155, 198);
@@ -104,6 +105,7 @@ a.one:link, a.one:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    transition-duration: 0.4s;
 }
 
 a.one:hover, a.one:active {
@@ -116,6 +118,12 @@ a.one:hover, a.one:active {
         width: 100%;
         margin-top: 5%;
     }
+}
+
+
+button:hover {
+    background-color: rgb(2, 155, 198);
+    color: white;
 }
 
 /*    @media  and (max-width: 500px) {

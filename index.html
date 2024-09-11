@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>IRON BYCICLE</title>
-    
 </head>
+
+<script>
+    function myFunction() {
+      alert("Message sended, our employees will contact to you on few moments.");
+    }
+</script>
+
 <body class="fondo">
     <header>
-        
         <div class="contenedor">
             <img class="imgheader" src="images/encabezado.jpg" alt="Ciclista">
             <h1 class="header">IRON BICYCLE</h1>
@@ -31,19 +36,16 @@
 
     <jumbotron id="Cat">
         <div class="rowcolumn">
-            
             <div class="column" style="background-color: white;">
                 <img src="images/bicicletaplegable.webp" alt="Bicicleta plegable" style="width: 100%; align-items: center; height: 405px; border-radius: 20px;">
                 <h2 style="text-align: justify; padding: 5%;">FOLDING BICYCLE</h2>
                 <p style="text-align: justify; padding: 5%;">Folding bicycle, divided at three sections, ideal for long trips. It brings better comfortable at time of bring with You..</p>
             </div>
-
             <div class="column" style="margin-left: 5%; margin-right: 5%; background-color: white;">
                 <img src="images/Bicicletamontana.jpg" alt="Bicicleta de montaña" style="width: 100%; align-items: center; height: 405px; border-radius: 20px;">
                 <h2 style="text-align: justify; padding: 5%;">MOUNTAIN BIKE</h2>
                 <p style="text-align: justify; padding: 5%;">Bicycles of all brands focused on hard terrain, various size depending on the user, accessories, spare parts, and much more.</p>
             </div>
-
             <div class="column" style="background-color: white;">
                 <img src="images/bicicletaruta.jpg" alt="Bicicleta de ruta" style="width: 100%; align-items: center; height: 405px; border-radius: 20px;">
                 <h2 style="text-align: justify; padding: 5%;">ROUTE BIKE</h2>
@@ -66,7 +68,6 @@
         </div>
 
         <div class="end">
-
             <div class="endcolumn" style="width: 30%">
                 <div>
                 <a href="https://www.facebook.com/?lang=es"><img  id="face" src="images/face.png" alt="icono de facebook" width="10%" height="2%" style="padding: 1%; margin-left: 30%;" ></a>
@@ -74,6 +75,7 @@
                 <a href="https://www.instagram.com/"><img id="insta" src="images/insta.png" alt="icono de instagram" width="10%" height="2%" style="padding: 1%; padding-left: 1%;"></a>
                 <a href="https://web.whatsapp.com/"><img id="whats" src="images/whats.png" alt="icono de whatsapp" width="10%" height="2%" style="padding: 1%; padding-left: 1%;"></a>
                 </div>
+
                 <div class="endcolumn" id="Con">
                     <h3>CONTACT US</h3>
                     <ul>
@@ -85,30 +87,23 @@
 
             <div class="endcolumn" style="width: 10%; margin-left: 10%;">
                 <h3>BICYCLES</h3>
-                <a class="one" href="#Cat">Catalog</a>
+                <button type="button" class="one" href="#Cat">Catalog</button>
             </div>
 
             <div class="endcolumn" style="width: 10%; margin-left: 10%;">
                 <h3>SUPPORT</h3>
-                <a class="one" href="#cotizaciones" target="_blank" style="margin-bottom: 5%;">Quotes</a>
-                <a class="one" href="#certificaciones" target="_blank" style="margin-top: 5%;">Certifications</a>
-                <a class="one" href="#ayuda" style="margin-top: 10%;">Technical support</a>
+                <button type="button" class="one" href="#cotizaciones" target="_blank" style="margin-bottom: 5%;">Quotes</button>
+                <button type="button" class="one" href="#certificaciones" target="_blank" style="margin-top: 5%;">Certifications</button>
+                <button type="button" class="one" href="#ayuda" style="margin-top: 10%;">Technical support</button>
             </div>
 
             <div class="endcolumn" style="width: 10%; margin-left: 10%;">
                 <h3>ABOUT US</h3>
-                <a class="one" href="#blog" target="_blank" style="margin-bottom: 5%;">Blog</a>
-                <a class="one" href="#partenrs" target="_blank" style="margin-top: 5%;">Partners</a>
+                <button type="button" class="one" href="#blog" target="_blank" style="margin-bottom: 5%;">Blog</button>
+                <button type="button" class="one" href="myFunction()" style="margin-top: 5%;">Partners</button>
                 <button type="button" class="one" style="margin-top: 10%;" onclick="myFunction()">Help</button>
             </div>
-
         </div>
     </footer>
-    
-    <script>
-        function myFunction() {
-          alert("Message sended, our employees will contact to you on few moments.");
-        }
-    </script>
 </body>
 </html>
